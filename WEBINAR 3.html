@@ -1,0 +1,110 @@
+<div class="content">
+    <h2>Kontak</h2>
+    <p>Jika Anda memiliki pertanyaan atau butuh bantuan, silakan hubungi kami melalui form berikut:</p>
+    <form class="contact-form">
+        <label for="nama Lengkap">Nama Lengkap:</label>
+        <input type="text" id="nama Lengkap" name="nama Lengkap" placeholder="Nama Lengkap">
+
+        <label for="email Pengguna">Email Pengguna:</label>
+        <input type="email pengguna" id="email Pengguna" name="email Pengguna" placeholder="Email Pengguna">
+
+        <label for="pesan  Pengguna">Pesan Pengguna:</label>
+        <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan pengguna"></textarea>
+
+        <button type="submit">Kirim Pesan</button>
+    </form>
+</div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: violet;
+        color: purple;
+    }
+    
+    .content {
+        background-color: peru;
+        (255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 50px auto;
+        color: black;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    h2 {
+        text-align: center;
+        color: #0056b3;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .contact-form {
+        margin-top: 20px;
+    }
+    
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+        color: #0056b3;
+    }
+    
+    input,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+    }
+    
+    input:focus,
+    textarea:focus {
+        border-color: palegreen;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+    
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: cyan;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    button:hover {
+        background-color: #218838;
+    }
+    
+    @media (max-width: 768px) {
+        .content {
+            padding: 20px;
+            margin: 20px auto;
+        }
+        input,
+        textarea {
+            padding: 10px;
+        }
+        button {
+            padding: 10px;
+            font-size: 14px;
+        }
+    }
+</style>

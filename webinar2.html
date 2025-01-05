@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Sejahtera Abadi - Aplikasi simpan pinjam terbaik untuk kebutuhan anda,proses. Mudah, aman, dan cepat">
+    <meta name="keywords" content="pinjaman, sejahtera abadi, transaksi, keuangan, pinjaman, kredit, simpanan, data pengguna">
+    <title>PINJAMAN SEJATERA ABADI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('logo simpan pinjam.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-bottom: 50px;
+        }
+        
+        .header {
+            background-color: skyblue;
+            (0,
+            123,
+            255,
+            0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            margin: 0;
+        }
+        
+        .login-btn {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background-color: royalblue;
+            (255,
+            255,
+            255,
+            0.8);
+            color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            text-decoration: none;
+            /* Ensure it's treated like a button */
+        }
+        
+        .login-btn:hover {
+            background-color: gainsboro;
+            color: white;
+        }
+        
+        .nav {
+            display: flex;
+            background-color: rgba(40, 167, 69, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav a {
+            padding: 14px 20px;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        
+        .nav a:hover {
+            background-color: blanchedalmond;
+            (33,
+            136,
+            56,
+            0.9);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container {
+            display: flex;
+            margin: 20px;
+            gap: 20px;
+        }
+        
+        .sidebar {
+            width: 25%;
+            background-color: rgba(249, 249, 249, 0.95);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+        .sidebar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid steelblue;
+        }
+        
+        .sidebar h2 {
+            color: powderblue;
+        }
+        
+        .sidebar a {
+            text-decoration: none;
+            color: slateblue;
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: rgba(240, 248, 255, 0.9);
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .sidebar a:hover {
+            background-color: slateblue;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .content {
+            width: 75%;
+            background-color: goldenrod;
+            (255,
+            215,
+            0,
+            0.8);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        .content h2 {
+            color: sienna;
+        }
+        
+        .content p,
+        .content ul {
+            color: silver;
+        }
+        
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        
+        .content ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            background-color: teal;
+            (0,
+            123,
+            255,
+            0.8);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .footer p {
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar,
+            .content {
+                width: 100%;
+            }
+            .login-btn {
+                right: 10px;
+                top: 10px;
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5em;
+            }
+            .nav a {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+            .login-btn {
+                padding: 6px 12px;
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>PINJAMAN SEJAHTERA ABADI</h1>
+        <a href="login.html" class="login-btn">Login</a>
+    </div>
+
+    <div class="nav">
+        <a href="home.html">HOME</a>
+        <a href="simpanan.html">Simpanan pengguna</a>
+        <a href="pinjaman.html">Limit kartu Kredit</a>
+        <a href="laporan.html">Laporan keuangan</a>
+        <a href="kontak.html">nama pengguna</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <img src="simpan pinjam.jpeg" alt="logo simpan pinjam">
+            <h2>Menu</h2>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="DATASIMPAN.html">Data Anggota</a>
+            <a href="Webinar.html">Transaksi</a>
+            <a href="webinar2.html">Laporan Keuangan</a>
+        </div>
+
+        <div class="content">
+            <h2>Dashboard</h2>
+            <p>Selamat datang di aplikasi simpan pinjam terbaik untuk kebutuhan finansial Anda!</p>
+            <p>Kelola simpanan, pinjaman, dan laporan keuangan dengan mudah, aman, dan cepat.</p>
+            <p>Aplikasi ini dirancang untuk memberikan kenyamanan dan kemudahan dalam mengatur keuangan Anda. Coba sekarang dan rasakan perbedaan dalam mengelola keuangan Anda secara lebih efisien!</p>
+            <p><strong>Kenapa memilih kami?</strong></p>
+            <ul>
+                <li><strong>Aman:</strong> Data Anda terlindungi dengan sistem keamanan tingkat tinggi.</li>
+                <li><strong>Mudah:</strong> Navigasi yang simpel dan fitur yang lengkap memudahkan Anda melakukan transaksi kapan saja.</li>
+                <li><strong>Cepat:</strong> Pengelolaan keuangan yang cepat tanpa repot, semua di ujung jari Anda.</li>
+            </ul>
+            <p>Jadi, tunggu apalagi? <strong>Bergabunglah dengan ratusan pengguna lainnya</strong> yang telah merasakan kemudahan mengelola simpanan dan pinjaman mereka dengan aplikasi kami.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 My Saku Cash</p>
+    </div>
+
+</body>
+
+</html>

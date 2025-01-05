@@ -1,0 +1,166 @@
+<div class="content">
+    <h2>Laporan Keuangan</h2>
+    <p>Lihat ringkasan Pinjaman Anda di sini. Anda dapat melihat laporan pinjaman kartu kredit anda dan cicilan yang dapat dilihat aktif atau tidak.</p>
+    <div class="laporan-sections">
+        <div class="section">
+            <h3>Laporan pinjaman</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Tanggal</th>
+                        <th>Jenis Kartu</th>
+                        <th>Jumlah Pinjaman</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>25/05/2026</td>
+                        <td>BCA</td>
+                        <td>Rp 2.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>10/05/2025</td>
+                        <td>MANADIRI</td>
+                        <td>Rp 10.000.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="section">
+            <h3>Jumlah pengguna</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Tanggal</th>
+                        <th>Jumlah Pinjaman</th>
+                        <th>Status Pengguna</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>25/05/2026</td>
+                        <td>Rp 5.000.000</td>
+                        <td>Tidak aktif</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>15/02/2025</td>
+                        <td>Rp 10.000.000</td>
+                        <td>sudah aktif</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: paleturquoise;
+        color: white;
+    }
+    
+    .content {
+        background-color: plum;
+        (255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 900px;
+        margin: 50px auto;
+        color: black;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    h2 {
+        text-align: center;
+        color: #0056b3;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .laporan-sections {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .section {
+        width: 48%;
+        background-color: rosybrown;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h3 {
+        color: firebrick;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid white;
+    }
+    
+    th,
+    td {
+        padding: 15px;
+        text-align: left;
+    }
+    
+    th {
+        background-color: burlywood;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+    /* Responsif */
+    
+    @media (max-width: 768px) {
+        .laporan-sections {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .section {
+            width: 100%;
+        }
+        th,
+        td {
+            font-size: 14px;
+        }
+    }
+</style>

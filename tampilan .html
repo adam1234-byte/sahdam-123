@@ -1,0 +1,107 @@
+<div class="content">
+    <h2>UTAMA</h2>
+    <p>Selamat datang di halaman utama Aplikasi Simpan Pinjam. Di sini, Anda bisa mengelola simpanan, pinjaman, dan melihat laporan keuangan dengan mudah.</p>
+    <div class="home-sections">
+        <div class="section kelola-simpanan">
+            <h3>Pinjaman kredit</h3>
+            <p> Ayo segara cek pinjaman Anda Dengan dengan Nama Pengguna Anda Dan pengecekan data dengan mudah.</p>
+        </div>
+        <div class="section ajukan-pinjaman">
+            <h3>Ajukan Pinjaman</h3>
+            <p>Ajukan pinjaman dengan bunga rendah dan proses yang cepat.</p>
+        </div>
+        <div class="section laporan-keuangan">
+            <h3>Laporan Keuangan pengguna</h3>
+            <p>Lihat laporan keuangan Anda secara berkala.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: cyan;
+        /* Biru */
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .content {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        margin: 40px auto;
+        max-width: 1200px;
+    }
+    
+    .home-sections {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        gap: 20px;
+    }
+    
+    .section {
+        width: 30%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        color: white;
+    }
+    
+    .section h3 {
+        margin-top: 0;
+        font-size: 24px;
+    }
+    
+    .section p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .kelola-simpanan {
+        background-color: limegreen;
+    }
+    
+    .ajukan-pinjaman {
+        background-color: dimgrey;
+        color: black;
+    }
+    
+    .laporan-keuangan {
+        background-color: springgreen;
+    }
+    
+    .section:hover {
+        transform: scale(1.05);
+        background-color: floralwhite;
+    }
+    
+    .section:hover.pinjaman-kredit {
+        background-color: limegreen;
+    }
+    
+    .section:hover.ajukan-pinjaman {
+        background-color: dimgrey;
+    }
+    
+    .section:hover.laporan-keuangan-pengguna {
+        background-color: springgreen;
+    }
+    
+    (max-width: 768px) {
+        .home-sections {
+            flex-direction: column;
+            align-items: center;
+        }
+        .section {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+    }
+</style>

@@ -1,0 +1,80 @@
+<div class="content">
+    <h2>Data Transaksi</h2>
+    <p>Berikut ini adalah data yang tercatat dalam sistem sejahtera abadi.</p>
+    <div class="transaksi-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tanggal</th>
+                    <th>Jenis pinjaman-kredit</th>
+                    <th>Jumlah Pinjaman</th>
+                    <th>Status pinjaman</th>
+                    <th>Aksi </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>24/07/2027</td>
+                    <td>pinjaman</td>
+                    <td>Rp 500.000.000</td>
+                    <td>Berhasil</td>
+                    <td><button>Detail</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>05/12/2026</td>
+                    <td>Pinjaman kredit</td>
+                    <td>Rp 1.000.00</td>
+                    <td>Gagal</td>
+                    <td><button>Detail</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <style>
+        .transaksi-table {
+            margin-top: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid whitesmoke;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #28a745;
+            color: white;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        button {
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</div>

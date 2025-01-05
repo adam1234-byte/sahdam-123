@@ -1,0 +1,112 @@
+<div class="content">
+    <h2>Laporan PInjaman</h2>
+    <p>Berikut adalah laporan pinjaman Anda yang mencakup kartu kredit anda dapat pinjaman, simpanan, dan cicilan kartu kredit anda.</p>
+    <div class="laporan-widgets">
+        <div class="widget">
+            <h3>Total pinjama</h3>
+            <p>Rp 6.000.000</p>
+        </div>
+        <div class="widget">
+            <h3>limit kartu pinjaman</h3>
+            <p>Rp 50.000.000</p>
+        </div>
+        <div class="widget">
+            <h3>Cicilan yang belum di bayarkan</h3>
+            <p>Rp 5.000.000</p>
+        </div>
+    </div>
+    <div class="laporan-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tanggal pinjaman</th>
+                    <th>Transaksi kartu </th>
+                    <th>Jumlah pinjaman</th>
+                    <th>status pinjaman</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>25/05/2026</td>
+                    <td>pinjaman-kredit</td>
+                    <td>Rp 10.000.000</td>
+                    <td>tertunda</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>05/10/2026</td>
+                    <td>Pinjaman</td>
+                    <td>Rp 2.000.000</td>
+                    <td>Dalam Proses</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <style>
+        .laporan-widgets {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        
+        .widget {
+            width: 30%;
+            padding: 20px;
+            background-color: darkmagenta;
+            color: darkkhaki;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .widget:nth-child(2) {
+            background-color: darkolivegreen;
+        }
+        
+        .widget:nth-child(3) {
+            background-color: darkorange;
+        }
+        
+        .widget h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+        }
+        
+        .widget p {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        
+        .laporan-table {
+            margin-top: 30px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid darkorchid;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: darkgoldenrod;
+            color: white;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: dodgerblue;
+        }
+    </style>
+</div>
